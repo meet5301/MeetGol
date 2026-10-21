@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="NJZDM6QNFEMk82DiXPr7QskBX15MBcZYJh1d3axsQD4" />
+
+  <!-- SEO Meta Tags -->
+  <title>Meet Gol | Data Engineer & Developer Portfolio</title>
+
+  <meta name="description" content="Meet Gol — MSc IT student focused on data engineering, Python, SQL, ETL pipelines, cloud tools, and full-stack applications.">
+  <meta name="keywords" content="meetgol, meet gol, Meet Gol portfolio, Fullstack developer, MERN Stack, Python Flask, Generative AI developer, CryptoBlock, Vastra, IndianFoodMap, Promptrix">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://meet5301.github.io/MeetGol/">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Meet Gol | Data Engineer & Developer Portfolio">
+  <meta property="og:description" content="Official portfolio of Meet Gol. Explore MERN Stack, Python Flask, Generative AI (LLMs), WebSockets & Blockchain projects.">
+  <meta property="og:url" content="https://meet5301.github.io/MeetGol/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://meet5301.github.io/MeetGol/static/img/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meet Gol | Portfolio">
+  <meta name="twitter:description" content="Meet Gol – Full Stack Developer & MSc IT Student portfolio website">
+  <meta name="twitter:image" content="https://meet5301.github.io/MeetGol/static/img/preview.png">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Meet Gol",
+    "url": "https://meet5301.github.io/MeetGol/",
+    "image": "https://meet5301.github.io/MeetGol/static/img/preview.png",
+    "jobTitle": "Full Stack Developer",
+    "description": "Meet Gol – MSc IT Student & Full Stack Developer skilled in MERN Stack, Python, Flask, FastAPI, and Generative AI.",
+    "sameAs": [
+      "https://github.com/meet5301",
+      "mailto:meetgol22@gmail.com",
+      "https://www.linkedin.com/in/meet-gol-902007427/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Technology logos for skill chips -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+  <!-- Background Layers -->
+  <div class="page-bg"></div>
+  <div class="page-noise"></div>
+
+  <!-- NAVBAR -->
+  <header class="topbar reveal">
+    <div class="brand">
+      <a href="#" class="brand-link">Meet Gol</a>
+      <span class="status-indicator-badge" id="site-status-badge">
+        <span class="dot-pulse"></span> <span id="status-badge-text">Available for hire</span>
+      </span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="admin-nav-btn" onclick="openAdminModal()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      Admin Portal
+    </button>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <div class="mobile-nav-drawer">
+      <div class="mobile-nav-header">
+        <span class="brand">Meet Gol</span>
+        <button class="close-drawer-btn" id="close-drawer-btn">&times;</button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <button class="btn btn-outline full admin-mobile-btn" onclick="openAdminModal(); closeMobileNav();">
+          🔐 Admin Portal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <main>
+    <section class="hero section reveal">
+      <div class="hero-left">
+        <p class="hero-label">MSc IT Student • Data Engineer &amp; Developer</p>
+        <h1>Meet Gol</h1>
+
+        <h2>
+          I build useful digital products and <span>data pipelines</span> that turn messy data into clear outcomes.
+        </h2>
+
+        <p class="hero-text">
+          MSc IT student focused on Python, SQL, ETL, data modeling, and full-stack development. I enjoy creating practical products—from data platforms and analytics workflows to interactive web applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="static/Meet_Gol_Resume.pdf" download="Meet_Gol_Resume.pdf" target="_blank" class="btn btn-solid">Download CV</a>
+          <a href="#contact" class="btn btn-outline">Let’s work together</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-portrait-wrap" aria-label="Professional 3D illustration of a developer working on a laptop">
+          <img class="hero-portrait" src="static/img/meet-gol-3d.png" alt="3D illustration of a professional developer with glasses and a moustache working on a laptop" fetchpriority="high">
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card stat-tall">
+            <p class="stat-number">6</p>
+            <p class="stat-label">Featured projects</p>
+          </div>
+
+          <div class="stat-card stat-wide">
+            <p class="stat-number">250+</p>
+            <p class="stat-label">LeetCode problems solved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip reveal" aria-label="Highlights"><div class="proof-item"><strong>250<span>+</span></strong><span>LeetCode problems</span></div><div class="proof-item"><strong>6</strong><span>Featured projects</span></div><div class="proof-item"><strong>ETL</strong><span>Bronze → Gold pipelines</span></div><div class="proof-item"><strong>AWS</strong><span>Cloud Architecting certificate</span></div></section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section reveal">
+      <div class="section-header">
+        <h2>About</h2>
+        <p class="section-sub">A quick look at my journey &amp; engineering mindset.</p>
+      </div>
+
+      <div class="layout-row">
+        <article class="card-soft about-main">
+          <p>
+            I’m a passionate <strong>MSc IT student</strong> specializing in full-stack web development, database engineering, and Generative AI applications. I enjoy writing clean, maintainable code and crafting practical software systems with modern user interfaces.
+          </p>
+
+          <p>
+            My work focuses on the <strong>MERN Stack</strong> (MongoDB, Express, React, Node.js), <strong>Python backend framework APIs</strong> (Flask, FastAPI), and hands-on implementation of LLM APIs (LiteLLM, OpenAI, Gemini, Claude) along with data processing tools like Pandas, NumPy, and Matplotlib.
+          </p>
+        </article>
+
+        <aside class="card-flat about-side">
+          <h3>Certifications</h3>
+          <ul>
+            <li><strong>AWS Academy Graduate</strong> – Cloud Architecting (60 Hours)</li>
+            <li><strong>Machine Learning with Python</strong> – IBM</li>
+            <li><strong>Databases &amp; SQL for Data Science</strong> – IBM</li>
+            <li><strong>Introduction to Cloud Computing</strong> – IBM</li>
+            <li><strong>Prompt Engineering for ChatGPT</strong> – Vanderbilt University</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section reveal">
+      <div class="section-header">
+        <h2>Skills &amp; Stack</h2>
+        <p class="section-sub">Technologies and tools from my technical toolkit.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card-soft skill-primary">
+          <h3>Back-End &amp; Databases</h3>
+          <p class="muted">Robust backend logic, REST APIs &amp; data management.</p>
+
+          <div class="chip-row">
+            <span class="chip"><i class="devicon-python-original" aria-hidden="true"></i><span>Python</span></span><span class="chip"><i class="devicon-flask-original" aria-hidden="true"></i><span>Flask</span></span><span class="chip"><i class="devicon-fastapi-original" aria-hidden="true"></i><span>FastAPI</span></span>
+            <span class="chip"><i class="devicon-nodejs-original" aria-hidden="true"></i><span>Node.js</span></span><span class="chip"><i class="devicon-express-original" aria-hidden="true"></i><span>Express.js</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">↗</i><span>REST APIs</span></span>
+            <span class="chip"><i class="devicon-mongodb-original" aria-hidden="true"></i><span>MongoDB</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">▤</i><span>SQL (MySQL)</span></span><span class="chip"><i class="devicon-sqlite-original" aria-hidden="true"></i><span>SQLite</span></span>
+            <span class="chip"><i class="skill-symbol" aria-hidden="true">⌖</i><span>Geospatial 2dsphere</span></span><span class="chip"><i class="devicon-redis-original" aria-hidden="true"></i><span>Redis</span></span>
+          </div>
+        </div>
+
+        <div class="card-soft">
+          <h3>Front-End &amp; MERN</h3>
+          <p class="muted">Responsive, modern &amp; interactive web UIs.</p>
+
+          <div class="chip-row">
+            <span class="chip"><i class="devicon-react-original" aria-hidden="true"></i><span>React.js / React 18</span></span><span class="chip"><i class="devicon-javascript-original" aria-hidden="true"></i><span>JavaScript</span></span><span class="chip"><i class="devicon-html5-original" aria-hidden="true"></i><span>HTML5</span></span>
+            <span class="chip"><i class="devicon-css3-original" aria-hidden="true"></i><span>CSS3</span></span><span class="chip"><i class="devicon-vitejs-original" aria-hidden="true"></i><span>Vite</span></span><span class="chip"><i class="devicon-tailwindcss-original" aria-hidden="true"></i><span>Tailwind CSS</span></span>
+            <span class="chip"><i class="skill-symbol" aria-hidden="true">⌖</i><span>React Leaflet</span></span>
+          </div>
+        </div>
+
+        <div class="card-soft">
+          <h3>Generative AI &amp; Data</h3>
+          <p class="muted">LLM integrations, prompt engineering &amp; data science tools.</p>
+
+          <div class="chip-row">
+            <span class="chip"><i class="skill-symbol" aria-hidden="true">✳</i><span>LLMs</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">✳</i><span>LiteLLM</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">◉</i><span>OpenAI API</span></span>
+            <span class="chip"><i class="skill-symbol" aria-hidden="true">✦</i><span>Gemini API</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">✳</i><span>Claude API</span></span><span class="chip"><i class="skill-symbol" aria-hidden="true">✎</i><span>Prompt Design</span></span>
+            <span class="chip"><i class="devicon-pandas-original" aria-hidden="true"></i><span>Pandas</span></span><span class="chip"><i class="devicon-numpy-original" aria-hidden="true"></i><span>NumPy</span></span><span class="chip"><i class="devicon-matplotlib-original" aria-hidden="true"></i><span>Matplotlib</span></span>
+          </div>
+        </div>
+
+        <div class="card-soft">
+          <h3>Tools &amp; DevOps</h3>
+          <p class="muted">Development environment, real-time networking &amp; deployment.</p>
+
+          <div class="chip-row">
+            <span class="chip"><i class="devicon-git-original" aria-hidden="true"></i><span>Git / GitHub</span></span><span class="chip"><i class="devicon-vscode-original" aria-hidden="true"></i><span>VS Code</span></span><span class="chip"><i class="devicon-jupyter-original" aria-hidden="true"></i><span>Jupyter</span></span>
+            <span class="chip"><i class="devicon-socketio-original" aria-hidden="true"></i><span>Socket.io</span></span><span class="chip">Flask-SocketIO</span><span class="chip"><i class="devicon-docker-original" aria-hidden="true"></i><span>Docker</span></span>
+            <span class="chip">JWT</span><span class="chip"><i class="devicon-huggingface-original" aria-hidden="true"></i><span>Hugging Face</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section reveal">
+      <div class="section-header project-section-heading">
+        <div><p class="eyebrow">SELECTED WORK / 2024—2026</p><h2>Projects with a purpose<span class="heading-dot">.</span></h2></div>
+        <p class="section-sub">A mix of data engineering systems and full-stack products—built to solve real problems.</p>
+      </div>
+      <div class="projects-grid redesigned-projects">
+        <article class="project-card project-featured">
+          <a class="project-visual visual-zenvix" href="https://github.com/meet5301" target="_blank" rel="noopener noreferrer" aria-label="Explore Zenvix on GitHub"><img src="static/img/projects/zenvix.svg" alt="Illustrative Zenvix data platform dashboard preview" loading="lazy"><span class="visual-tag">DATA ENGINEERING</span></a>
+          <div class="project-content"><div class="project-kicker">01 / PIPELINES &amp; ANALYTICS</div><h3>Zenvix — Data Management &amp; BI Platform</h3><p>Multi-tenant Bronze-to-Gold ETL pipelines with PySpark and Databricks, event-driven ingestion, dimensional modeling, and Power BI-ready data.</p><div class="chip-row"><span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">Azure Event Hubs</span><span class="chip">Spark SQL</span></div><div class="project-links"><a href="https://github.com/meet5301" target="_blank" rel="noopener noreferrer">Explore repositories <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual" href="https://gensaas-1.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open GenSaaS live project"><img src="static/img/projects/gensaas.svg" alt="Illustrative GenSaaS product dashboard preview" loading="lazy"><span class="visual-tag">LIVE PROJECT</span></a>
+          <div class="project-content"><div class="project-kicker">02 / SAAS PRODUCT</div><h3>GenSaaS</h3><p>A live web project. Explore the deployed product to see its current experience and features.</p><div class="chip-row"><span class="chip">Web App</span><span class="chip">Live Deployment</span></div><div class="project-links"><a href="https://gensaas-1.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo <span>↗</span></a><a href="https://github.com/meet5301" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual" href="https://github.com/meet5301/IndianFoodMap" target="_blank" rel="noopener noreferrer" aria-label="View IndianFoodMap repository"><img src="static/img/projects/indianfoodmap.svg" alt="Illustrative IndianFoodMap discovery interface preview" loading="lazy"><span class="visual-tag">GEOSPATIAL</span></a>
+          <div class="project-content"><div class="project-kicker">03 / MERN STACK</div><h3>IndianFoodMap</h3><p>Discover local street-food vendors with map-based exploration, location-aware search, and a MongoDB-backed data model.</p><div class="chip-row"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">Leaflet</span></div><div class="project-links"><a href="https://github.com/meet5301/IndianFoodMap" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual" href="https://github.com/meet5301/CryptoBlock" target="_blank" rel="noopener noreferrer" aria-label="View CryptoBlock repository"><img src="static/img/projects/cryptoblock.svg" alt="Illustrative CryptoBlock trading dashboard preview" loading="lazy"><span class="visual-tag">REAL-TIME APP</span></a>
+          <div class="project-content"><div class="project-kicker">04 / PYTHON &amp; WEBSOCKETS</div><h3>CryptoBlock</h3><p>Crypto trading platform concept featuring real-time price updates, portfolio workflows, trade history, and blockchain-inspired transaction logging.</p><div class="chip-row"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">MongoDB</span><span class="chip">Socket.IO</span></div><div class="project-links"><a href="https://github.com/meet5301/CryptoBlock" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual" href="https://github.com/meet5301/Vastra" target="_blank" rel="noopener noreferrer" aria-label="View Vastra repository"><img src="static/img/projects/vastra.svg" alt="Illustrative Vastra fashion e-commerce interface preview" loading="lazy"><span class="visual-tag">E-COMMERCE</span></a>
+          <div class="project-content"><div class="project-kicker">05 / MERN COMMERCE</div><h3>Vastra</h3><p>Fashion e-commerce experience with product browsing, search, cart, wishlist, user authentication, and order management.</p><div class="chip-row"><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">Node.js</span><span class="chip">JWT</span></div><div class="project-links"><a href="https://github.com/meet5301/Vastra" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a></div></div>
+        </article>
+        <article class="project-card">
+          <a class="project-visual" href="https://github.com/meet5301/Promptrix" target="_blank" rel="noopener noreferrer" aria-label="View Promptrix repository"><img src="static/img/projects/promptrix.svg" alt="Illustrative Promptrix AI website builder interface preview" loading="lazy"><span class="visual-tag">GENERATIVE AI</span></a>
+          <div class="project-content"><div class="project-kicker">06 / AI-ASSISTED BUILDING</div><h3>Promptrix</h3><p>Prompt-driven website builder designed to turn written ideas into downloadable HTML websites with a preview-and-refine workflow.</p><div class="chip-row"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">LLM API</span><span class="chip">HTML/CSS/JS</span></div><div class="project-links"><a href="https://github.com/meet5301/Promptrix" target="_blank" rel="noopener noreferrer">View repository <span>↗</span></a></div></div>
+        </article>
+      </div>
+      <div class="more-projects-note"><span class="note-mark">↗</span><div><strong>More experiments, code, and builds</strong><p>Browse my GitHub for additional repositories. I’ll add more project cards as their details and links are verified.</p></div><a href="https://github.com/meet5301?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-link">All repositories <span>↗</span></a></div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section reveal">
+      <div class="section-header">
+        <h2>Education</h2>
+        <p class="section-sub">Academic degrees &amp; background.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-soft wide">
+            <span class="pill pill-active">Ongoing</span>
+            <h3>Master of Science in Information Technology (MSCIT)</h3>
+            <p>Charotar University of Science and Technology (CHARUSAT) – Changa, Gujarat</p>
+            <p class="muted">2025 – 2027</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-flat">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Lok Jagruti University (LJU) – Ahmedabad, Gujarat</p>
+            <p class="muted">2022 – 2025</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-flat">
+            <h3>Higher Secondary Certificate (HSC - 12th)</h3>
+            <p>SKP School, Rajkot</p>
+            <p class="muted">2022</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card card-flat">
+            <h3>Secondary School Certificate (SSC - 10th)</h3>
+            <p>Shree Swaminarayan Gurukul International School, Junagadh</p>
+            <p class="muted">2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section reveal">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-sub">Open for full-time roles, internships &amp; software collaborations.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="card-soft contact-info">
+          <h3>Let’s Connect</h3>
+          <p class="muted">Feel free to reach out for project discussions or software engineering roles.</p>
+
+          <ul class="contact-list">
+            <li><a href="tel:+918238005301">+91 82380 05301</a></li>
+            <li><a href="mailto:meetgol22@gmail.com">meetgol22@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/meet-gol-902007427/" target="_blank">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/meet5301" target="_blank">GitHub Profile</a></li>
+          </ul>
+        </div>
+
+        <!-- WhatsApp Form -->
+        <form class="card-flat contact-form" onsubmit="sendWhatsApp(event)">
+          <div class="form-row">
+            <input id="w-name" type="text" placeholder="Your Name" required>
+            <input id="w-phone" type="text" placeholder="Your Phone">
+          </div>
+
+          <input id="w-email" type="email" placeholder="Your Email" required>
+          <textarea id="w-msg" rows="4" placeholder="Your Message"></textarea>
+
+          <button type="submit" class="btn btn-solid full">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+      <span>© 2026 Meet Gol | Data Engineer &amp; Developer</span>
+      <span class="footer-divider">•</span>
+      <button class="admin-footer-link" onclick="openAdminModal()">Admin Access</button>
+    </div>
+  </footer>
+
+  <!-- ===== ADMIN MODAL & DASHBOARD PANEL ===== -->
+  <div class="admin-overlay" id="admin-overlay">
+    <div class="admin-modal-container">
+      
+      <!-- Login View (when not authenticated) -->
+      <div id="admin-login-view" class="admin-view">
+        <div class="admin-modal-header">
+          <div class="admin-brand">
+            <span class="dot green"></span>
+            <h3>Admin Portal Authentication</h3>
+          </div>
+          <button class="admin-close-btn" onclick="closeAdminModal()">&times;</button>
+        </div>
+        <div class="admin-modal-body">
+          <p class="muted" style="margin-bottom: 1.2rem;">Enter security PIN to access portfolio management dashboard.</p>
+          <form onsubmit="handleAdminLogin(event)">
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.4rem;">Security PIN</label>
+              <input type="password" id="admin-pin-input" placeholder="Enter security PIN" class="admin-input" required>
+              </div>
+              <p id="login-error-msg" class="login-error-text" style="display:none; color: #ef4444; font-size: 0.82rem; margin-bottom: 0.8rem;"></p>
+              <div class="admin-action-row">
+                <button type="submit" class="btn btn-solid full">Unlock Dashboard</button>
+              </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Dashboard View (when authenticated) -->
+      <div id="admin-dashboard-view" class="admin-view" style="display: none;">
+        <!-- Header bar -->
+        <div class="admin-modal-header">
+          <div class="admin-user-info">
+            <div class="admin-avatar">MG</div>
+            <div>
+              <h3 class="admin-title">Meet Gol • Admin Dashboard</h3>
+              <p class="admin-subtitle"><span class="pulse-dot green"></span> System Live &amp; Operational</p>
+            </div>
+          </div>
+          <div class="admin-header-actions">
+            <button class="admin-btn-sm" onclick="lockAdminPanel()">Lock Panel</button>
+            <button class="admin-close-btn" onclick="closeAdminModal()">&times;</button>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="admin-tabs-bar">
+          <button class="admin-tab active" data-tab="overview" onclick="switchAdminTab('overview')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            Overview
+          </button>
+          <button class="admin-tab" data-tab="inbox" onclick="switchAdminTab('inbox')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Inbox (<span id="unread-count-badge">0</span>)
+          </button>
+          <button class="admin-tab" data-tab="projects" onclick="switchAdminTab('projects')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Projects (4)
+          </button>
+          <button class="admin-tab" data-tab="settings" onclick="switchAdminTab('settings')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            Site Settings
+          </button>
+        </div>
+
+        <!-- Tab Content Area -->
+        <div class="admin-tab-content">
+          
+          <!-- TAB 1: OVERVIEW -->
+          <div id="tab-overview" class="admin-tab-panel active">
+            <div class="admin-stats-grid">
+              <div class="admin-stat-card">
+                <div class="stat-icon-wrapper blue">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-title">Total Portfolio Views</span>
+                  <p class="stat-val" id="stat-views-val">0</p>
+                  <span class="stat-trend green">Tracked in this browser</span>
+                </div>
+              </div>
+
+              <div class="admin-stat-card">
+                <div class="stat-icon-wrapper green">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-title">Messages Received</span>
+                  <p class="stat-val" id="stat-msg-val">0</p>
+                  <span class="stat-trend green" id="stat-msg-trend">Stored locally</span>
+                </div>
+              </div>
+
+              <div class="admin-stat-card">
+                <div class="stat-icon-wrapper purple">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-title">Featured Projects</span>
+                  <p class="stat-val">6 Active</p>
+                  <span class="stat-trend blue">All portfolio projects</span>
+                </div>
+              </div>
+
+              <div class="admin-stat-card">
+                <div class="stat-icon-wrapper orange">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-title">Work Status</span>
+                  <p class="stat-val" id="stat-status-val" style="font-size: 1.1rem; color: #4ade80;">Available for Hire</p>
+                  <span class="stat-trend green">Open for Roles</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent activity section -->
+            <div class="admin-section-box">
+              <h4>System Quick Status &amp; Recent Activity</h4>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <span class="dot green"></span>
+                  <div class="activity-detail">
+                    <strong>Admin Session Active</strong>
+                    <span class="muted">Logged in from current browser instance</span>
+                  </div>
+                  <span class="activity-time">Just now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: INBOX -->
+          <div id="tab-inbox" class="admin-tab-panel">
+            <div class="admin-inbox-header">
+              <h4>Contact Form Messages</h4>
+              <button class="btn-sm btn-danger-outline" onclick="clearAllMessages()">Clear All Messages</button>
+            </div>
+            
+            <div id="inbox-messages-container" class="inbox-messages-wrapper">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+          <!-- TAB 3: PROJECTS MANAGEMENT -->
+          <div id="tab-projects" class="admin-tab-panel">
+            <div class="admin-section-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h4>Manage Featured Projects</h4>
+                <span class="pill pill-active">6 Live</span>
+              </div>
+              <div class="admin-projects-list">
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>Zenvix – Data Management &amp; BI Platform</strong>
+                    <span class="muted">PySpark, Databricks, Azure Event Hubs, Spark SQL</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://github.com/meet5301" target="_blank" class="btn-sm btn-outline">View Repo</a>
+                  </div>
+                </div>
+
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>GenSaaS – SaaS Web Application</strong>
+                    <span class="muted">Web application, live deployment</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://gensaas-1.onrender.com/" target="_blank" class="btn-sm btn-outline">View Project</a>
+                  </div>
+                </div>
+
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>CryptoBlock – Crypto Trading Platform</strong>
+                    <span class="muted">Python, Flask, SocketIO, MongoDB, Docker</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://github.com/meet5301/CryptoBlock" target="_blank" class="btn-sm btn-outline">View Repo</a>
+                  </div>
+                </div>
+
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>Vastra – MERN Fashion E-Commerce</strong>
+                    <span class="muted">MongoDB, Express.js, Node.js, JWT</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://github.com/meet5301/Vastra" target="_blank" class="btn-sm btn-outline">View Repo</a>
+                  </div>
+                </div>
+
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>IndianFoodMap – Street Food Discovery</strong>
+                    <span class="muted">React 18, Leaflet, Socket.io, Tailwind CSS</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://github.com/meet5301/IndianFoodMap" target="_blank" class="btn-sm btn-outline">View Repo</a>
+                  </div>
+                </div>
+
+                <div class="admin-project-item">
+                  <div class="admin-proj-info">
+                    <strong>Promptrix – AI Website Builder</strong>
+                    <span class="muted">Python, Flask, Claude API, SQLite</span>
+                  </div>
+                  <div class="admin-proj-actions">
+                    <span class="badge badge-success">Featured</span>
+                    <a href="https://github.com/meet5301/Promptrix" target="_blank" class="btn-sm btn-outline">View Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: SITE SETTINGS -->
+          <div id="tab-settings" class="admin-tab-panel">
+            <div class="admin-section-box">
+              <h4>Site Status &amp; Availability Toggle</h4>
+              <p class="muted" style="margin-bottom: 1rem;">Update status badge shown in topbar and contact card.</p>
+              
+              <div class="form-group" style="margin-bottom: 1.2rem;">
+                <label style="display: block; font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.5rem;">Current Availability</label>
+                <select id="availability-select" class="admin-input" onchange="updateAvailabilityStatus(this.value)">
+                  <option value="Available for hire">🟢 Available for hire / full-time roles</option>
+                  <option value="Open for freelancing">🔵 Open for freelancing / projects</option>
+                  <option value="Busy with current projects">🔴 Currently busy with MSC IT coursework</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.2rem;">
+                <label style="display: block; font-size: 0.85rem; color: #9ca3af; margin-bottom: 0.5rem;">Admin Security PIN</label>
+                <input type="password" id="new-pin-input" placeholder="Set a new security PIN" class="admin-input">
+                <button class="btn btn-outline" style="margin-top: 0.6rem;" onclick="saveNewPin()">Update PIN</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script src="static/js/main.js"></script>
+
+<script>
+(() => {
+  const iconMap = [
+    [/^python$/i, 'devicon-python-plain'], [/^flask$/i, 'devicon-flask-original'], [/^fastapi$/i, 'devicon-fastapi-plain'],
+    [/^node\.js$/i, 'devicon-nodejs-plain'], [/^express\.js$/i, 'devicon-express-original'], [/^mongodb$/i, 'devicon-mongodb-plain'],
+    [/^sql \(mysql\)$/i, 'devicon-mysql-plain'], [/^sqlite$/i, 'devicon-sqlite-plain'], [/^react\.js \/ react 18$/i, 'devicon-react-original'],
+    [/^javascript$/i, 'devicon-javascript-plain'], [/^html5$/i, 'devicon-html5-plain'], [/^css3$/i, 'devicon-css3-plain'],
+    [/^vite$/i, 'devicon-vitejs-plain'], [/^tailwind css$/i, 'devicon-tailwindcss-plain'], [/^pandas$/i, 'devicon-pandas-plain'],
+    [/^numpy$/i, 'devicon-numpy-plain'], [/^matplotlib$/i, 'devicon-matplotlib-plain'], [/^git$/i, 'devicon-git-plain'],
+    [/^github$/i, 'devicon-github-original'], [/^azure$/i, 'devicon-azure-plain'], [/^databricks$/i, 'devicon-databricks-plain'],
+    [/^apache spark$/i, 'devicon-apachespark-original'], [/^pyspark$/i, 'devicon-apachespark-original'], [/^aws$/i, 'devicon-amazonwebservices-plain-wordmark']
+  ];
+  document.querySelectorAll('.chip').forEach(chip => {
+    if (chip.querySelector('i')) return;
+    const label = chip.textContent.trim();
+    const found = iconMap.find(([pattern]) => pattern.test(label));
+    if (found) {
+      const icon = document.createElement('i');
+      icon.className = found[1];
+      icon.setAttribute('aria-hidden', 'true');
+      chip.prepend(icon);
+    } else {
+      const icon = document.createElement('i');
+      icon.className = 'devicon-devicon-plain';
+      icon.setAttribute('aria-hidden', 'true');
+      icon.textContent = '⌘';
+      chip.prepend(icon);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
