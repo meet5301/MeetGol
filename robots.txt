@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meet5301.github.io/MeetGol/sitemap.xml
